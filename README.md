@@ -226,7 +226,7 @@ plot_hist(df['month'], bins=12, title='Month', xlabel='Month of Flight')
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/bdc79678-428d-4024-b5b7-037535191cc2)
 
-### Inference
+### Findings
 
 #### Distribution of Flights Across Months
 - The histogram reveals that the distribution of flights across different months is approximately uniform.
@@ -237,7 +237,7 @@ plot_hist(df['month'], bins=12, title='Month', xlabel='Month of Flight')
 plot_hist(df['day'], bins=31, title='Day', xlabel='Day of Flight', fontsize=7, rotation=45)
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/3fe6482a-1ccf-4145-a339-d0ffc2980461)
-### Inference
+### Findings
 
 #### Distribution of Flights Across Days of the Month
 - The histogram shows a mostly uniform distribution of flights across the days of the month.
@@ -247,7 +247,7 @@ plot_hist(df['dep_time'].dropna(), bins=24, title='Departure Time', xlabel='Depa
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/75ae7b38-0c15-403f-b264-d7c0f8adc38d)
 
-### Inference
+### Findings
 
 #### Distribution of Flight Departure Times
 - The histogram displays a bimodal distribution, suggesting two peak periods for flight departures.
@@ -260,7 +260,7 @@ plot_hist(df['sched_dep_time'], bins=24, title='Scheduled Departure Time', xlabe
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/fcb17afb-829d-4d4d-8e2a-f4b5daf318f9)
 
-### Inference
+### Findings
 
 #### Distribution of Scheduled Flight Departure Times
 - The histogram exhibits a similar pattern to the departure time histogram.
@@ -274,7 +274,7 @@ plot_hist(df['dep_delay'].dropna(), bins=30, title='Departure Delay', xlabel='De
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/ca2d7a26-a3b3-4862-8fbc-3afe314ed018)
 
-### Inference
+### Findings
 
 #### Distribution of Departure Delays
 - The histogram illustrates that a significant portion of flights depart close to their scheduled departure time, as indicated by the peak of the distribution around zero.
@@ -286,7 +286,7 @@ plot_hist(df['arr_time'].dropna(), bins=24, title='Arrival Time', xlabel='Arriva
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/eb572100-2731-426e-b888-9a031c3e6ddc)
 
-### Inference
+### Findings
 
 #### Distribution of Flight Arrival Times
 - The histogram displays a bimodal distribution, suggesting two peak periods for flight arrivals.
@@ -297,7 +297,7 @@ plot_hist(df['sched_arr_time'], bins=24, title='Scheduled Arrival Time', xlabel=
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/063887b7-7299-49b3-b41a-a6270370e6dc)
 
-### Inference
+### Findings
 
 #### Distribution of Scheduled Flight Arrival Times
 - The histogram closely resembles the arrival time histogram, indicating consistency between scheduled and actual arrival times.
@@ -309,7 +309,7 @@ plot_hist(df['arr_delay'].dropna(), bins=30, title='Arrival Delay', xlabel='Arri
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/6c9a7cb6-2deb-442d-b771-65aee822723e)
 
-### Inference
+### Findings
 
 #### Distribution of Arrival Delays
 - The histogram indicates that a significant portion of flights arrive close to their scheduled arrival time, as evidenced by the peak of the distribution around zero.
@@ -321,7 +321,7 @@ plot_bar(df['carrier'], 'Carrier', 'Airline Carrier Code')
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/4bc48e8e-c144-4afe-a48d-b9833a0dd827)
 
-### Inference
+### Findings
 
 #### Frequency of Flights by Carrier
 - The bar plot reveals that carriers with the codes UA, B6, EV, and DL operate the most flights in this dataset.
@@ -333,7 +333,7 @@ plot_bar(df['origin'], 'Origin', 'Departure Airport Code')
 
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/3b1306ba-1cbf-4424-9ca1-8779ceddf7df)
 
-### Inference
+### Findings
 
 #### Frequency of Flights by Origin Airport
 - The bar plot indicates that the majority of flights in this dataset depart from the airport with the code EWR.
@@ -351,7 +351,7 @@ plt.show()
 
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/ea012ac8-2991-40a2-9c29-3fd87bb0771a)
 
-### Inference
+### Findings
 
 #### Frequency of Flights by Destination Airport
 - The bar plot indicates that the most common destination airports are ORD, ATL, and LAX.
@@ -362,7 +362,7 @@ plot_hist(df['air_time'].dropna(), bins=30, title='Air Time', xlabel='Flight Dur
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/d67ea344-0a94-4c0f-aa6d-b37e15f4404c)
 
-### Inference
+### Findings
 
 #### Distribution of Flight Air Times
 - The histogram reveals that most flights have an air time of around 50 to 200 minutes.
@@ -374,7 +374,7 @@ plot_hist(df['distance'], bins=30, title='Distance', xlabel='Flight Distance (mi
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/8f360464-47d0-4c5d-8ad1-9561cbd0ddc2)
 
-### Inference
+### Findings
 
 #### Distribution of Flight Distances
 - The histogram indicates that most flights travel a distance of around 500 to 1000 miles.
@@ -387,7 +387,7 @@ plot_hist(df['hour'], bins=24, title='Hour', xlabel='Hour of Scheduled Departure
 
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/f069210f-8f01-4568-922a-67910112bfca)
 
-### Inference
+### Findings
 
 #### Distribution of Hour Component in Scheduled Departure Time
 - The histogram unveils two peak periods for the hour component of the scheduled departure time.
@@ -400,7 +400,7 @@ plot_hist(df['minute'], bins=60, title='Minute', xlabel='Minute of Scheduled Dep
 
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/58ee4e3e-93ab-4e87-8211-ddd6ef58d151)
 
-### Inference
+### Findings
 
 #### Distribution of Minute Component in Scheduled Departure Time
 - The histogram illustrates an almost uniform distribution for the minute component of the scheduled departure time.
@@ -413,7 +413,7 @@ plot_bar(df['name'], 'Name', 'Airline Carrier Name')
 
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/e8e6ebc0-29d6-47b0-b43d-2edd53003a72)
 
-### Inference
+### Findings
 
 #### Frequency of Flights by Airline
 - The bar plot reveals that United Air Lines Inc., JetBlue Airways, and ExpressJet Airlines Inc. are the airlines that operate the most flights in this dataset.
@@ -454,7 +454,7 @@ plot_violin(df['year'], df['arr_delay'], 'Year vs Arrival Delay', 'Year', 'Arriv
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/35e08a35-00e8-498f-85a1-a14894f20119)
 
-### Inference
+### Findings
 
 #### Effectiveness of Violin Plot
 - The violin plot does not provide much information due to the limited variation in the dataset, which contains flights from only one year.
@@ -465,7 +465,7 @@ plot_violin(df['month'], df['arr_delay'], 'Month vs Arrival Delay', 'Month', 'Ar
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/f8b41512-959c-4891-8b72-d610341e18dc)
 
-### Inference
+### Findings
 
 #### Variation of Arrival Delays by Month
 - The violin plot illustrates that the distribution of arrival delays varies by month.
@@ -477,7 +477,7 @@ plot_violin(df['day'], df['arr_delay'], 'Day vs Arrival Delay', 'Day', 'Arrival 
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/bf2adbee-07d1-4756-bcd1-bb3ef664456a)
 
-### Inference
+### Findings
 
 #### Impact of Day of the Month on Arrival Delays
 - The violin plot suggests that the day of the month does not have a significant impact on the distribution of arrival delays.
@@ -489,7 +489,7 @@ plot_scatter(df['dep_time'], df['arr_delay'], 'Departure Time vs Arrival Delay',
 
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/02107703-23a8-4f06-ad97-16efb5ea4c32)
 
-### Inference
+### Findings
 
 #### Relationship Between Departure Time and Delays
 - The scatter plot reveals a slight trend suggesting that flights departing later in the day tend to experience more delays.
@@ -500,7 +500,7 @@ plot_scatter(df['sched_dep_time'], df['arr_delay'], 'Scheduled Departure Time vs
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/4efc75d4-135d-41f7-a19c-581289d9693a)
 
-### Inference
+### Findings
 
 #### Relationship Between Scheduled Departure Time and Delays
 - This plot exhibits a similar pattern to the previous one, suggesting that flights scheduled to depart later in the day tend to experience more delays.
@@ -511,7 +511,7 @@ plot_scatter(df['dep_delay'], df['arr_delay'], 'Departure Delay vs Arrival Delay
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/930e39f8-d25c-410e-9f7f-728f6b69e216)
 
-### Inference
+### Findings
 
 #### Correlation Between Departure Delay and Arrival Delay
 - As expected, there is a strong positive correlation between departure delay and arrival delay.
@@ -523,7 +523,7 @@ plot_scatter(df['arr_time'], df['arr_delay'], 'Arrival Time vs Arrival Delay', '
 
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/8b578db8-710b-41f1-a4c2-9ecdaef1b62b)
 
-### Inference
+### Findings
 
 #### Relationship Between Arrival Time and Delays
 - The scatter plot reveals that flights arriving later in the day tend to experience more delays.
@@ -536,7 +536,7 @@ plot_scatter(df['sched_arr_time'], df['arr_delay'], 'Scheduled Arrival Time vs A
 
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/d01c027f-a66c-40d9-a866-886570ff9ecf)
 
-### Inference
+### Findings
 
 #### Relationship Between Scheduled Arrival Time and Delays
 - This plot further supports the observation that flights scheduled to arrive later in the day tend to experience more delays.
@@ -547,7 +547,7 @@ plot_violin(df['carrier'], df['arr_delay'], 'Carrier vs Arrival Delay', 'Carrier
 ```
 <img width="505" alt="image" src="https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/507b23ee-a26a-4fdf-8f14-8c317e215e82">
 
-### Inference
+### Findings
 
 #### Variation of Arrival Delays by Carrier
 - The violin plot illustrates that different carriers exhibit different distributions of arrival delays.
@@ -559,7 +559,7 @@ plot_violin(df['origin'], df['arr_delay'], 'Origin vs Arrival Delay', 'Origin', 
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/e92df4be-a144-4692-a145-bf92ddca0884)
 
-### Inference
+### Findings
 
 #### Variation of Arrival Delays by Origin Airport
 - The violin plot reveals that flights from different origin airports exhibit different distributions of arrival delays.
@@ -571,7 +571,7 @@ plot_violin(df['dest'], df['arr_delay'], 'Destination vs Arrival Delay', 'Destin
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/41cc3ddd-9d4d-4bd4-819e-132070e2b7f1)
 
-### Inference
+### Findings
 
 #### Variation of Arrival Delays by Destination Airport
 - The violin plot indicates that flights going to different destinations exhibit different distributions of arrival delays.
@@ -583,7 +583,7 @@ plot_scatter(df['air_time'], df['arr_delay'], 'Air Time vs Arrival Delay', 'Air 
 ```
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/e2b28f84-6690-4a60-88ab-bec20d51349c)
 
-### Inference
+### Findings
 
 #### Relationship Between Flight Duration and Arrival Delay
 - The scatter plot does not exhibit a clear trend, indicating that the duration of the flight (air_time) does not have a significant impact on the arrival delay.
@@ -595,7 +595,7 @@ plot_scatter(df['distance'], df['arr_delay'], 'Distance vs Arrival Delay', 'Dist
 
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/945b070b-8c78-413b-9a35-8d1eed365400)
 
-### Inference
+### Findings
 
 #### Relationship Between Flight Distance and Arrival Delay
 - This plot also lacks a clear trend, suggesting that the distance of the flight does not have a significant impact on the arrival delay.
@@ -607,7 +607,7 @@ plot_violin(df['hour'], df['arr_delay'], 'Hour vs Arrival Delay', 'Hour', 'Arriv
 
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/f20eb74a-8ae7-4b06-b3ad-68b55199b3a2)
 
-### Inference
+### Findings
 
 #### Variation of Arrival Delays by Departure Hour
 - The violin plot indicates that flights departing at different hours of the day exhibit different distributions of arrival delays.
@@ -620,7 +620,7 @@ plot_violin(df['minute'], df['arr_delay'], 'Minute vs Arrival Delay', 'Minute', 
 
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/96e03ec2-8f30-46a3-85a3-9d873a6352b8)
 
-### Inference
+### Findings
 
 #### Impact of Minute Component of Departure Time on Arrival Delays
 - The violin plot suggests that the minute of the hour of the departure time does not have a significant impact on the distribution of arrival delays.
@@ -632,7 +632,7 @@ plot_violin(df['name'], df['arr_delay'], 'Name vs Arrival Delay', 'Name', 'Arriv
 
 ![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/d4e749c4-0e93-4d0d-9184-292a6f8a9ed4)
 
-### Inference
+### Findings
 
 #### Variation of Arrival Delays by Airline
 - The violin plot illustrates that different airlines (represented by their names) exhibit different distributions of arrival delays.
@@ -655,6 +655,73 @@ However, the following features do not seem to significantly influence arrival d
 - Day
 - Air Time
 - Distance
+
+
+#### Multivariate Analysis
+### Multivariate Analysis Plan
+
+A multivariate analysis will be conducted to understand the interactions between different features of the dataset and how they collectively impact the target variable (arrival delay).
+
+Due to the complexity of multivariate plots, we will only consider a few key features. The choice of these features is based on the results from the bivariate analysis: month, departure time, departure delay, carrier, origin, destination, and hour.
+
+```python
+# Define color palette with different shades of color #8502d1 for multivariate plots
+colors_multi = sns.dark_palette("#8502d1", as_cmap=False)
+
+# For correlation heatmap, let's consider the numeric features only
+numeric_features = ['month', 'dep_time', 'dep_delay', 'hour']
+correlation_matrix = df[numeric_features].corr()
+
+plt.figure(figsize=(10,8))
+sns.heatmap(correlation_matrix, annot=True, cmap=colors_multi, annot_kws={"size": 8})
+plt.xticks(fontsize=7)
+plt.yticks(fontsize=7)
+plt.title('Correlation Heatmap', fontsize=15)
+plt.show()
+```
+![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/0d1a4981-c36f-483e-9378-bb131de9a932)
+
+### Findings
+
+#### Correlation Analysis
+- The heatmap displays the correlation coefficients between the numeric features.
+- Departure delay (dep_delay) exhibits a strong positive correlation with arrival delay (arr_delay), indicating that as the departure delay increases, the arrival delay also tends to increase.
+- However, the other features (month, departure time, and hour) show very weak correlations with arrival delay, suggesting that these features by themselves do not strongly influence the arrival delay.
+
+```python
+# 'dep_delay' vs 'dep_time' across different 'carrier'
+g = sns.FacetGrid(df, col="carrier", col_wrap=4, height=4, aspect=1)
+g.map(plt.scatter, "dep_time", "dep_delay", color=colors_multi[-2], s=10)
+g.fig.suptitle('Departure Delay vs Departure Time across Carriers', fontsize=15, y=1.02)
+plt.show()
+```
+![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/3b026e84-b797-47ff-a721-6579a1d1bd2d)
+
+### Findings
+
+#### Relationship between Departure Delay and Departure Time by Carrier
+- The scatter plots illustrate the relationship between departure delay and departure time for different carriers.
+- Some carriers exhibit a more pronounced trend of increased departure delay with later departure times, while others do not.
+- This suggests that the interaction between carrier and departure time could be a significant factor influencing arrival delay.
+
+```python
+# 'dep_delay' vs 'dep_time' across different 'origin'
+g = sns.FacetGrid(df, col="origin", col_wrap=4, height=5, aspect=1)
+g.map(plt.scatter, "dep_time", "dep_delay", color=colors_multi[-2], s=10)
+g.fig.suptitle('Departure Delay vs Departure Time across Origins', fontsize=15, y=1.02, x=0.38)
+plt.show()
+```
+
+![image](https://github.com/vummanenidilip/Flight-data-eda-preprocessing/assets/44915745/1ee47873-9499-4d51-a68a-c4db73dc9353)
+
+### Findings
+
+#### Relationship between Departure Delay and Departure Time by Origin Airport
+- The scatter plots depict the relationship between departure delay and departure time for flights from different origin airports.
+- Similar to the carrier plots, some origin airports exhibit a more pronounced trend of increased departure delay with later departure times, while others do not.
+- This suggests that the interaction between origin airport and departure time could also be a significant factor influencing arrival delay.
+
+
 
 
 
