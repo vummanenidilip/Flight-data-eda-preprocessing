@@ -2,8 +2,7 @@
 Join us on a thrilling journey through flight data! Discover departure times, delays, distances, and more. Let's uncover patterns and clues about flight delays together! Fasten your seatbelts for an adventure! 🛫✈️🕵️‍♂️
 
 **Mission : **
-Our mission is to play detective, identifying patterns and uncovering clues that shed light on what causes flight delays. So, fasten your seatbelts and prepare for an exhilarating journey through this rich flight data!
-To include the line `%matplotlib inline` in a README file for GitHub, you can explain its purpose briefly and provide an example of usage. Here's how you can write it:
+Our mission is to play detective, identifying patterns and uncovering clues that shed light on what causes flight delays. So, fasten your seatbelts and prepare for an exhilarating journey through this rich flight data!:
 
 ```markdown
 ### Setting up Dependencies for Data Analysis
